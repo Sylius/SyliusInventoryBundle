@@ -22,6 +22,11 @@ class InventoryUnit extends ObjectBehavior
         $this->shouldImplement('Sylius\Bundle\InventoryBundle\Model\InventoryUnitInterface');
     }
 
+    function it_should_implement_timestampable_interface()
+    {
+        $this->shouldImplement('Sylius\Bundle\ResourceBundle\Model\TimestampableInterface');
+    }
+
     function it_should_not_have_id_by_default()
     {
         $this->getId()->shouldReturn(null);

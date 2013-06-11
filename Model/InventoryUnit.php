@@ -11,6 +11,8 @@
 
 namespace Sylius\Bundle\InventoryBundle\Model;
 
+use DateTime;
+
 /**
  * Inventory unit model.
  *
@@ -142,8 +144,24 @@ class InventoryUnit implements InventoryUnitInterface
     /**
      * {@inheritdoc}
      */
+    public function setCreatedAt(DateTime $createdAt)
+    {
+        $this->createdAt = $createdAt;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function getUpdatedAt()
     {
         return $this->updatedAt;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setUpdatedAt(DateTime $updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
     }
 }
