@@ -1,6 +1,3 @@
 # This file is part of the Sylius package.
 # (c) Paweł Jędrzejewski
 
-sylius:
-  inventory_unit:
-    sold: Unità di magazzino soddisfatte.
